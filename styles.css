@@ -1,0 +1,122 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    color: #172128;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 280px;
+    overflow: hidden;
+}
+
+#main {
+    background-color: #F2F4F7;
+    border-bottom: 1px solid #CACACA;
+}
+
+#media {
+    opacity: 0;
+    position: absolute;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    -webkit-transition: opacity .25s ease-in;
+}
+
+#sub {
+    backdrop-filter: blur(3px);
+    background-color: rgba(74, 78, 78, 0.2);
+    overflow: auto;
+    position: relative;
+}
+
+#progress {
+    width: 230px;
+}
+
+#bar {
+    position: relative;
+    height: 7px;
+    width: 0%;
+    background-color: #0077FF;
+    transition: width 0.5s, background-color 0.25s;
+    -moz-transition: width 0.5s, background-color 0.25s;
+    -webkit-transition: width 0.5s, background-color 0.25s;
+}
+
+#status {
+    max-width: none;
+    font-size: medium;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+
+#search { 
+    float: right;
+    height: 50px;
+    width: 50px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#search:hover {
+    cursor: pointer;
+}
+
+#search:disabled {
+    opacity: 0.6;
+    cursor: auto;
+}
+
+#search:focus {
+    outline: none;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.input {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    color: black;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    z-index: 1;
+}
+
+.input::placeholder {
+    opacity: 0.8;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input:hover {
+    opacity: 0.6;
+}
+
+.icon {
+    height: 22px;
+    width: 22px;
+    z-index: 1;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
